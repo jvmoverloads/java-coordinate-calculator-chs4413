@@ -1,4 +1,4 @@
-package view;
+package coordinate.view;
 
 public class OutputView {
     private static final int MIN_VALUE = 0;
