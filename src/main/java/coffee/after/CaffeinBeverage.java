@@ -6,10 +6,20 @@ package coffee.after;
  * abstract로 선언한 메소드를 자식 클래스에서 반드시 구현해야 한다.
  */
 public abstract class CaffeinBeverage {
+
+    // 요놈들만 자식 클래스에서 필수 재정의
     abstract void brew();
 
+    // 요놈들만 자식 클래스에서 필수 재정의
     abstract void addCondiments();
 
+    /**
+     * 템플릿 메서드
+     * 부모 클래스에서 알고리즘의 골격을 정의하지만,
+     * 해당 알고리즘의 구조를 변경하지 않고
+     * 자식 클래스들이 알고리즘의 "특정 단계"들을
+     * 오버라이드(재정의)할 수 있도록 하는 행동 디자인 패턴.
+     */
     void prepareRecipe() {
         boilWater();
         brew();
