@@ -1,11 +1,8 @@
+package fuel;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-
-import fuel.Avante;
-import fuel.K5;
-import fuel.RentCompany;
-import fuel.Sonata;
 
 public class RentCompanyTest {
     private static final String NEWLINE = System.getProperty("line.separator");
