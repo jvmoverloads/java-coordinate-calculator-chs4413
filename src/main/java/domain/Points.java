@@ -1,4 +1,4 @@
-package coordinate.domain;
+package domain;
 
 import java.util.HashSet;
 import java.util.List;

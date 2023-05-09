@@ -1,6 +1,6 @@
-package coordinate.controller;
+package controller;
 
-import coordinate.view.OutputView;
+import view.OutputView;
 
 public class CoordinateController {
 
