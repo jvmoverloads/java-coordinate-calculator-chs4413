@@ -1,4 +1,4 @@
-package domain;
+package coordinate.domain;
 
 public class Point {
     private final int x;

@@ -1,4 +1,4 @@
-package view;
+package coordinate.view;
 
 public class InputView {
 

@@ -1,4 +1,6 @@
-import controller.CoordinateController;
+package coordinate;
+
+import coordinate.controller.CoordinateController;
 
 public class Application {
     public static void main(String[] args) {
