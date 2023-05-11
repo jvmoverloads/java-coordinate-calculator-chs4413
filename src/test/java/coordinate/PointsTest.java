@@ -23,14 +23,12 @@ public class PointsTest {
     @Test
     @DisplayName("좌표는 중복될 수 없다.")
     void test2() {
-        assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> {
-            new Points(
-                    List.of(
-                            new Point(3, 3),
-                            new Point(3, 3),
-                            new Point(5, 5)
-                    )
-            );
-        }).withMessage("좌표 중복");
+        assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> new Points(
+                List.of(
+                        new Point(3, 3),
+                        new Point(3, 3),
+                        new Point(5, 5)
+                )
+        )).withMessage("좌표 중복");
     }
 }

@@ -2,6 +2,7 @@ package coordinate.domain;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 public class Points {
@@ -27,27 +28,15 @@ public class Points {
     }
 
     @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((points == null) ? 0 : points.hashCode());
-        return result;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Points points1 = (Points) o;
+        return Objects.equals(points, points1.points);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Points other = (Points) obj;
-        if (points == null) {
-            if (other.points != null)
-                return false;
-        } else if (!points.equals(other.points))
-            return false;
-        return true;
+    public int hashCode() {
+        return Objects.hash(points);
     }
 }

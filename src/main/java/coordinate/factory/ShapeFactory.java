@@ -5,12 +5,11 @@ import coordinate.domain.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public enum ShapeFactory {
-    LINE(2, (Points points) -> new Line(points)),
-    TRIANGLE(3, (Points points) -> new Triangle(points)),
-    RECTANGLE(4, (Points points) -> new Rectangle(points));
+    LINE(2, Line::new),
+    TRIANGLE(3, Triangle::new),
+    RECTANGLE(4, Rectangle::new);
     private final int pointCount;
     private final Function<Points, Shape> function;
 
