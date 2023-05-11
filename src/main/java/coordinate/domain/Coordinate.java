@@ -10,7 +10,7 @@ public class Coordinate {
 
     public Coordinate(int coordinate) {
         if (coordinate < MIN_BOUNDARY || coordinate > MAX_BOUNDARY)
-            throw new IllegalArgumentException("좌표 입력 범위는 0 이상, 25 미만 입니다.");
+            throw new IllegalArgumentException("좌표 입력 범위는 0 ~ 24 사이의 자연수 입니다.");
         this.coordinate = coordinate;
     }
 

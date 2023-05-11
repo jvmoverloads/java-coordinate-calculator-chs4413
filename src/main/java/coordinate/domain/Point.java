@@ -9,7 +9,7 @@ public class Point {
         this.y = new Coordinate(y);
     }
 
-    public double getInstance(Point point) {
+    public double getDistance(Point point) {
         int x = point.getX();
         int y = point.getY();
 

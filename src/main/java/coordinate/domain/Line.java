@@ -1,5 +1,7 @@
 package coordinate.domain;
 
+import java.util.List;
+
 public class Line extends Shape {
 
     private static final String SHAPE_NAME = "선";
@@ -11,12 +13,11 @@ public class Line extends Shape {
 
     @Override
     public double calculateDistance() {
-        return 0;
-    }
+        List<Point> vertexes = points.getPoints();
+        Point point1 = vertexes.get(0);
+        Point point2 = vertexes.get(1);
 
-    @Override
-    public double calculateArea() {
-        return 0;
+        return point1.getDistance(point2);
     }
 
     @Override

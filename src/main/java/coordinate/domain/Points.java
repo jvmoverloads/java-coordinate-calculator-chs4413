@@ -22,6 +22,10 @@ public class Points {
         return points;
     }
 
+    public int getSize() {
+        return points.size();
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
