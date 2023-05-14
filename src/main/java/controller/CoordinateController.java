@@ -17,5 +17,4 @@ public class CoordinateController {
         Result result = ResultFactory.createResult(shape);
         OutputView.printResult(result);
     }
-
 }
