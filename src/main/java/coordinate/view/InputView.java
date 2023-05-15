@@ -1,4 +1,4 @@
-package view;
+package coordinate.view;
 
 import coordinate.domain.Point;
 import coordinate.domain.Points;

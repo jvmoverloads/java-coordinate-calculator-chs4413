@@ -1,4 +1,4 @@
-package view;
+package coordinate.view;
 
 import coordinate.domain.CoordinateLine;
 import coordinate.domain.CoordinateLines;
